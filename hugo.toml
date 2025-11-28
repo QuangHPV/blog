@@ -1,7 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Until a good name is found'
-theme = ["PaperMod"]
+theme = ["PaperModX"]
+font_size = 18
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -12,8 +13,16 @@ theme = ["PaperMod"]
           inline = [['\(', '\)'], ['$', '$']]
 
 [params]
+  ShowReadingTime = true
+  ShowShareButtons =  true
+  ShowPostNavLinks = true
   ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
   math = true
+  showtoc = true
+  tocopen = true
+  TocSide = "left"
+  hideSummary = true
 
 [caches]
   [caches.images]
