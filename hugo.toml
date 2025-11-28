@@ -1,0 +1,20 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Until a good name is found'
+theme = ["PaperMod"]
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+
+[params]
+  ShowCodeCopyButtons = true
+  math = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
